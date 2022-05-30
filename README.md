@@ -1,5 +1,5 @@
 # Whiteboard-Exercises-Algoritms
-A repository to store exercises done for Algorithms &amp; Data Structures course at UniPa and some personal exercises.
+A repository to store exercises done for Algorithms &amp; Data Structures, Databases & Computer Programming courses at UniPa and some personal exercises.
 
 # C - Prog1
 It contains two exercises written in C for UniPa's Computer Programming 1 course.
@@ -42,3 +42,7 @@ Bookings of booking customers must include the number of participants at the tab
 Employees must have mandatory contact information, which can be an email or a telephone number.
 Some employees have professional qualifications to take into account. Permits are requested one day at a time by employees.
 Room n.1 is completely outside and smoking is allowed, while in n.2 it is not allowed to smoke and has a table on a small balcony and the other tables inside, n.3 has a space dedicated to a only table inside but has more space on a terrace and, in this room, smoking is allowed.
+
+# Whiteboard Coding - ADS
+It contains some standard algorithms (regarding Graphs, Binary / R&B Trees, Sorting..) and my solution to some exercises in pseudo-code.
+I'm still improving them and I'm currently writing more of them to be prepared for the ADS exam (written test + assigned project + oral exam).
