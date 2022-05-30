@@ -1,0 +1,457 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; text-align: center; font: 16.0px Times; color: #140d0c; -webkit-text-stroke: #140d0c}
+    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 16.0px Times; color: #b50013; -webkit-text-stroke: #b50013}
+    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 16.0px Times; color: #870581; -webkit-text-stroke: #870581}
+    p.p4 {margin: 0.0px 0.0px 12.0px 0.0px; font: 16.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p5 {margin: 0.0px 0.0px 12.0px 0.0px; font: 16.0px Times; color: #4b5966; -webkit-text-stroke: #4b5966}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times; color: #4b5966; -webkit-text-stroke: #4b5966}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times; color: #4b5966; -webkit-text-stroke: #4b5966; min-height: 19.0px}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times; color: #870581; -webkit-text-stroke: #870581}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times; color: #b50013; -webkit-text-stroke: #b50013}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times; color: #581f98; -webkit-text-stroke: #581f98}
+    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 19.0px}
+    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times; color: #285a61; -webkit-text-stroke: #285a61}
+    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p15 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p17 {margin: 0.0px 0.0px 12.0px 0.0px; text-align: center; font: 16.0px Times; color: #140d0c}
+    p.p18 {margin: 0.0px 0.0px 12.0px 0.0px; font: 16.0px Times; color: #b50013; -webkit-text-stroke: #b50013; min-height: 19.0px}
+    p.p19 {margin: 0.0px 0.0px 12.0px 0.0px; font: 16.0px Times; color: #502a18; -webkit-text-stroke: #502a18}
+    p.p20 {margin: 0.0px 0.0px 12.0px 0.0px; font: 16.0px Times; color: #1400c4; -webkit-text-stroke: #1400c4; min-height: 19.0px}
+    p.p21 {margin: 0.0px 0.0px 12.0px 0.0px; font: 16.0px Times; color: #0d3d66; -webkit-text-stroke: #0d3d66}
+    p.p22 {margin: 0.0px 0.0px 12.0px 0.0px; font: 16.0px Times; color: #11538e; -webkit-text-stroke: #11538e}
+    p.p23 {margin: 0.0px 0.0px 12.0px 0.0px; font: 16.0px Times; color: #173639; -webkit-text-stroke: #173639}
+    p.p24 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p25 {margin: 0.0px 0.0px 12.0px 0.0px; font: 16.0px Times; color: #581f98; -webkit-text-stroke: #581f98}
+    p.p26 {margin: 0.0px 0.0px 12.0px 0.0px; font: 16.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 19.0px}
+    p.p27 {margin: 0.0px 0.0px 12.0px 0.0px; font: 16.0px Times; color: #4b5966; -webkit-text-stroke: #4b5966; min-height: 19.0px}
+    p.p28 {margin: 0.0px 0.0px 12.0px 0.0px; font: 16.0px Times; color: #285a61; -webkit-text-stroke: #285a61}
+    p.p29 {margin: 0.0px 0.0px 12.0px 0.0px; font: 16.0px Times; color: #140d0c; min-height: 19.0px}
+    p.p30 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times; color: #b50013; -webkit-text-stroke: #b50013; min-height: 19.0px}
+    span.s1 {font-kerning: none}
+    span.s2 {font-kerning: none; color: #502a18; -webkit-text-stroke: 0px #502a18}
+    span.s3 {font-kerning: none; color: #11538e; -webkit-text-stroke: 0px #11538e}
+    span.s4 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s5 {font: 12.0px Times; font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s6 {font-kerning: none; color: #173639; -webkit-text-stroke: 0px #173639}
+    span.s7 {font-kerning: none; color: #1400c4; -webkit-text-stroke: 0px #1400c4}
+    span.s8 {font-kerning: none; color: #870581; -webkit-text-stroke: 0px #870581}
+    span.s9 {font-kerning: none; color: #285a61; -webkit-text-stroke: 0px #285a61}
+    span.s10 {font-kerning: none; color: #4b5966; -webkit-text-stroke: 0px #4b5966}
+    span.s11 {font-kerning: none; color: #581f98; -webkit-text-stroke: 0px #581f98}
+    span.s12 {font-kerning: none; -webkit-text-stroke: 0px #000000}
+    span.s13 {font-kerning: none; color: #b50013; -webkit-text-stroke: 0px #b50013}
+    span.s14 {font: 16.0px Times; font-kerning: none}
+    span.s15 {font-kerning: none; color: #870581; -webkit-text-stroke: 0px #000000}
+    span.s16 {font-kerning: none; color: #1400c4; -webkit-text-stroke: 0px #000000}
+    span.s17 {font: 12.0px Times; font-kerning: none}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">CONTENUTO DEL FILE “main.c”</span></p>
+<p class="p2"><span class="s2">#include </span><span class="s1">"musicHeader.h"<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"><b>int </b></span><span class="s3">main</span><span class="s4">()<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">{<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s5"><span class="Apple-tab-span">	</span></span><span class="s6">Rivista </span><span class="s4">scaffale[</span><span class="s7">10</span><span class="s4">];<span class="Apple-tab-span">	</span></span><span class="s1">//Dichiarazione di un array di riviste: lo scaffale</span></p>
+<p class="p5"><span class="s1"><span class="Apple-tab-span">	</span></span><span class="s6">Rivista </span><span class="s4">Search;<span class="Apple-tab-span">	</span></span><span class="s1"> // Variabile che sarà utilizzata per la ricerca in base al nome rivista o al genere</span></p>
+<p class="p6"><span class="s6"><span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>strumentoMusicale </span><span class="s4">Ricercato;<span class="Apple-tab-span">	</span></span><span class="s1">/Variabile utilizzata per la ricerca in base al nome dello strumento musicale</span></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span></span><span class="s8"><b>char </b></span><span class="s4">ricerca[</span><span class="s7">35</span><span class="s4">]; <span class="Apple-tab-span">	</span></span><span class="s1">//Variabile utilizzata per memorizzare input dall’utente</span></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span></span><span class="s8"><b>int </b></span><span class="s4">selezione; <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s1">//Variabile utilizzata per scegliere un’opzione dal menù principale</span></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span></span><span class="s9">creaScaffale</span><span class="s4">(scaffale); <span class="Apple-tab-span">	</span></span><span class="s1">//richiamo alla function creaScaffale: il "database" delle riviste presenti sullo scaffale</span></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p8"><span class="s10"><span class="Apple-tab-span">	</span></span><span class="s1"><b>do</b></span><span class="s4">{</span></p>
+<p class="p9"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s11">printf</span><span class="s4">(</span><span class="s1">" ****************************** \n"</span><span class="s4">);<span class="Apple-converted-space"> </span></span></p>
+<p class="p9"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s11">printf</span><span class="s4">(</span><span class="s1">" # <span class="Apple-converted-space">    <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>        </span></span><span class="s12"># \n”</span><span class="s4">);<span class="Apple-converted-space"> </span></span></p>
+<p class="p9"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s11">printf</span><span class="s4">(</span><span class="s1">" #<span class="Apple-tab-span">	</span><span class="Apple-converted-space">  </span>SCAFFALE<span class="Apple-converted-space">  </span>MUSICALE<span class="Apple-tab-span">	</span><span class="Apple-converted-space">        </span></span><span class="s12"># \n”</span><span class="s4">);<span class="Apple-converted-space"> </span></span></p>
+<p class="p9"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s11">printf</span><span class="s4">(</span><span class="s1">" #<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>0124 <span class="Apple-converted-space">  </span>1968<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">        </span></span><span class="s12"># \n”</span><span class="s4">);<span class="Apple-converted-space"> </span></span><span class="s1"><span class="Apple-tab-span">	</span></span></p>
+<p class="p9"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s11">printf</span><span class="s4">(</span><span class="s1">" #<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">        </span></span><span class="s12"># \n”</span><span class="s4">);<span class="Apple-converted-space"> </span></span></p>
+<p class="p9"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s11">printf</span><span class="s4">(</span><span class="s1">" ****************************** \n"</span><span class="s4">);</span></p>
+<p class="p10"><span class="s13"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s1">printf</span><span class="s4">(</span><span class="s13">"\n"</span><span class="s4">);</span></p>
+<p class="p9"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s11">printf</span><span class="s4">(</span><span class="s1">"SCEGLIERE L'OPERAZIONE DA ESEGUIRE:\n\n1 RICERCA &amp; ACQUISTO RIVISTA;\n\n2 ESPLORA PER GENERE;\n\n3 RICERCA PER STRUMENTO\n\n4 ESCI\n\n"</span><span class="s4">);<span class="Apple-converted-space"> </span></span></p>
+<p class="p11"><span class="s1"></span><br></p>
+<p class="p9"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s11">printf</span><span class="s4">(</span><span class="s1">"Effettuare la selezione:\n"</span><span class="s4">);</span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p6"><span class="s5"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s11">scanf</span><span class="s4">(</span><span class="s13">"%d"</span><span class="s4">, &amp;selezione);<span class="Apple-converted-space"> </span></span><span class="s1"> <span class="Apple-converted-space">        </span>//Scelta dell'azione da compiere dal menù</span></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s8"><b>if </b></span><span class="s4">(selezione == </span><span class="s7">1</span><span class="s4">) <span class="Apple-tab-span">	</span></span><span class="s1">//Primo caso: si vuole fare una ricerca di una rivista e acquistarla in caso sia disponibile<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s4">{<br>
+</span><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>printf</span><span class="s4">(</span><span class="s13">"Nome rivista da acquistare: \n"</span><span class="s4">);<br>
+</span><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>scanf</span><span class="s4">(</span><span class="s13">"%s"</span><span class="s4">, ricerca);<br>
+<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>Search.</span><span class="s9">titolo </span><span class="s4">= ricerca; <span class="Apple-tab-span">	</span></span><span class="s1">//Viene assegnato il valore di ricerca a Search di tipo Rivista, nel campo titolo</span></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s8"><b>if </b></span><span class="s4">(</span><span class="s9">checkRivista</span><span class="s4">(scaffale, Search) == </span><span class="s7">1</span><span class="s4">) <span class="Apple-tab-span">	</span></span><span class="s1">//richiamo alla function checkRivista che controllerà se la rivista sarà disponibile, in base al titolo e ai pezzi disponibili</span></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s4">{<span class="Apple-converted-space"> </span></span></p>
+<p class="p9"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s11">printf</span><span class="s4">(</span><span class="s1">"Disponibile!\n"</span><span class="s4">);</span></p>
+<p class="p6"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s11">printf</span><span class="s4">(</span><span class="s13">"Puo' procedere all'acquisto. \nil prezzo e' di: %d EURO \n"</span><span class="s4">, </span><span class="s9">checkPrezzo</span><span class="s4">(scaffale, Search)); <span class="Apple-tab-span">	</span></span><span class="s1">//richiamo alla function checkPrezzo che mostrerà il prezzo della rivista il cui titolo è stato immesso in Search.titolo</span></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s9">pauseScreen</span><span class="s4">(); </span><span class="s5"><span class="Apple-tab-span">	</span></span><span class="s1">//richiamo alla function per permettere all'utente di visualizzare i dati ricevuti, sostituto di SYSTEM("PAUSE")</span></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s9">clearScreen</span><span class="s4">();<span class="Apple-converted-space"> </span></span><span class="s1"> <span class="Apple-converted-space">    </span>//richiamo alla function per ripulitura dello schermo, sostituto di SYSTEM("CLS")</span></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s4">}<span class="Apple-converted-space"> </span></span></p>
+<p class="p7"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s8"><b>if </b></span><span class="s4">(</span><span class="s9">checkRivista</span><span class="s4">(scaffale, Search) == </span><span class="s7">0</span><span class="s4">)<span class="Apple-tab-span">	</span> </span><span class="s1">//sezione di codice da eseguire in caso la rivista non sia disponibile o il titolo non esista<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s4">{</span></p>
+<p class="p9"><span class="s11"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>printf</span><span class="s4">(</span><span class="s1">"Non e' possibile trovare la rivista desiderata!\n"</span><span class="s4">);</span></p>
+<p class="p13"><span class="s1"><span class="Apple-converted-space">       <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>pauseScreen</span><span class="s4">();</span></p>
+<p class="p13"><span class="s1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>clearScreen</span><span class="s4">();</span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s5"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s8"><b>if </b></span><span class="s4">(selezione == </span><span class="s7">2</span><span class="s4">) <span class="Apple-tab-span">	</span></span><span class="s1">//Secondo caso: si vuole fare una ricerca delle riviste di un genere noto<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s4">{<br>
+</span><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>printf</span><span class="s4">(</span><span class="s13">"Genere da ricercare: \n"</span><span class="s4">);<br>
+</span><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>scanf</span><span class="s4">(</span><span class="s13">"%s"</span><span class="s4">, ricerca);<br>
+<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>Search.</span><span class="s9">genere </span><span class="s4">= ricerca; </span><span class="s1">//Viene assegnato il valore di ricerca a Search di tipo Rivista, nel campo genere</span></p>
+<p class="p9"><span class="s11"><span class="Apple-converted-space">     <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>printf</span><span class="s4">(</span><span class="s1">"Ecco le riviste in catalogo di quel genere: \n"</span><span class="s4">);</span></p>
+<p class="p6"><span class="s9"><span class="Apple-converted-space">     <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>genreSearch</span><span class="s4">(scaffale, Search); </span><span class="s1"><span class="Apple-converted-space">              </span>//Stampa a schermo le riviste del genere selezionato. Potrebbe non stamparne nessuna e stampare un errore al loro posto</span></p>
+<p class="p13"><span class="s1"><span class="Apple-converted-space">    <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>pauseScreen</span><span class="s4">();</span></p>
+<p class="p13"><span class="s1"><span class="Apple-converted-space">    <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>clearScreen</span><span class="s4">();</span></p>
+<p class="p14"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+<p class="p5"><span class="s5"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s8"><b>if </b></span><span class="s4">(selezione == </span><span class="s7">3</span><span class="s4">)<span class="Apple-tab-span">	</span></span><span class="s1">//Terzo caso: si vuole fare una ricerca delle riviste in cui è presente uno strumento noto<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s4">{</span></p>
+<p class="p9"><span class="s11"><span class="Apple-converted-space">    <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>printf</span><span class="s4">(</span><span class="s1">"Strumento da ricercare: \n"</span><span class="s4">);</span></p>
+<p class="p14"><span class="s11"><span class="Apple-converted-space">    <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>scanf</span><span class="s1">(</span><span class="s13">"%s"</span><span class="s1">, ricerca);</span></p>
+<p class="p6"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>Ricercato.</span><span class="s9">nome </span><span class="s4">= ricerca; </span><span class="s1">//Viene assegnato il valore di ricerca a Ricercato di tipo StrumentoMusicale, nel campo nome<span class="Apple-converted-space"> </span></span></p>
+<p class="p9"><span class="s10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s11">printf</span><span class="s4">(</span><span class="s1">"Ecco le riviste in catalogo che trattano quello strumento: \n"</span><span class="s4">);</span></p>
+<p class="p6"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s9">instrumentSearch</span><span class="s4">(scaffale, Ricercato); </span><span class="s1">//Vengono stampate a schermo le riviste che contengono lo strumento selezionato e le loro specifiche. Potrebbe non essercene nessuna e mostrare un messaggio di errore</span></p>
+<p class="p13"><span class="s10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s1">pauseScreen</span><span class="s4">();</span></p>
+<p class="p13"><span class="s1"><span class="Apple-converted-space">    <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>clearScreen</span><span class="s4">();</span></p>
+<p class="p14"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}<span class="Apple-converted-space"> </span></span></p>
+<p class="p11"><span class="s1"></span><br></p>
+<p class="p6"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s8"><b>if</b></span><span class="s4">(selezione == </span><span class="s7">4</span><span class="s4">) <span class="Apple-tab-span">	</span></span><span class="s1">//Quarto caso: richiesta di uscita dal programma</span></p>
+<p class="p14"><span class="s10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s1">{<span class="Apple-converted-space"> </span></span></p>
+<p class="p9"><span class="s10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s11">printf</span><span class="s4">(</span><span class="s1">"Chiusura del servizio..\n"</span><span class="s4">);<span class="Apple-converted-space"> </span></span></p>
+<p class="p14"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}<span class="Apple-converted-space"> </span></span></p>
+<p class="p11"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+<p class="p6"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s8"><b>if</b></span><span class="s4">(selezione != </span><span class="s7">1 </span><span class="s4">&amp;&amp; selezione != </span><span class="s7">2 </span><span class="s4">&amp;&amp; selezione != </span><span class="s7">3 </span><span class="s4">&amp;&amp; selezione != </span><span class="s7">4</span><span class="s4">) <span class="Apple-tab-span">	</span></span><span class="s1">//Quinto caso: si immette un valore che non corrisponde ad alcun elemento del menù principale.</span></p>
+<p class="p16"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s14">{</span></p>
+<p class="p6"><span class="s11"><span class="Apple-converted-space">    <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>printf</span><span class="s4">(</span><span class="s13">"Selezione errata!\n"</span><span class="s4">); </span><span class="s1"><span class="Apple-converted-space">    </span>//Viene stampato un messaggio di errore e successivamente si può ritentare</span></p>
+<p class="p13"><span class="s1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>pauseScreen</span><span class="s4">();</span></p>
+<p class="p13"><span class="s1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>clearScreen</span><span class="s4">();</span></p>
+<p class="p14"><span class="s1"><span class="Apple-converted-space">   <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>  </span>}</span></p>
+<p class="p11"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s15"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>while </b></span><span class="s4">(selezione != </span><span class="s16">4</span><span class="s4">); <span class="Apple-tab-span">	</span></span><span class="s1">//Quando selezione==4, allora si uscirà dal programma</span></p>
+<p class="p4"><span class="s1">}<span class="Apple-converted-space"> </span></span></p>
+<p class="p11"><span class="s1"></span><br></p>
+<p class="p17"><span class="s1">CONTENUTO DEL FILE “musicHeader.h”</span></p>
+<p class="p6"><span class="s1">//Librerie utilizzate</span></p>
+<p class="p2"><span class="s2">#include </span><span class="s1">&lt;stdio.h&gt;<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s2">#include </span><span class="s1">&lt;stdlib.h&gt;<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s2">#include </span><span class="s1">&lt;string.h&gt;<span class="Apple-converted-space"> </span></span></p>
+<p class="p18"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1">//Macro utilizzate</span></p>
+<p class="p19"><span class="s1">#define MAX_RIVISTE </span><span class="s7">8<span class="Apple-converted-space"> </span></span></p>
+<p class="p19"><span class="s1">#define MAX_STRUMENTI </span><span class="s7">4<span class="Apple-converted-space"> </span></span></p>
+<p class="p20"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1">//Struct definite</span></p>
+<p class="p21"><span class="s8"><b>struct </b></span><span class="s1">musicalInstrument </span><span class="s4">{<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s8"><b>char </b></span><span class="s1">*</span><span class="s3">nome</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">      </span>};<span class="Apple-converted-space"> </span></span></p>
+<p class="p21"><span class="s8"><b>struct </b></span><span class="s1">rivista </span><span class="s4">{<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s8"><b>char </b></span><span class="s1">*</span><span class="s3">titolo</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p22"><span class="s8"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>char </b></span><span class="s4">*</span><span class="s1">IDcode</span><span class="s4">;<br>
+</span><span class="s8"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>char </b></span><span class="s4">*</span><span class="s1">genere</span><span class="s4">;<br>
+</span><span class="s8"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>float </b></span><span class="s1">prezzo</span><span class="s4">;<br>
+</span><span class="s8"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>int </b></span><span class="s1">pezziDisponibili</span><span class="s4">;<br>
+</span><span class="s8"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>struct </b></span><span class="s6">musicalInstrument </span><span class="s1">strumento</span><span class="s4">[</span><span class="s7">5</span><span class="s4">];<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>};<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"><b>typedef struct </b></span><span class="s6">rivista </span><span class="s4">Rivista;<br>
+</span><span class="s1"><b>typedef struct </b></span><span class="s6">musicalInstrument </span><span class="s4">strumentoMusicale;<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">//Prototipi delle functions</span></p>
+<p class="p4"><span class="s8"><b>void </b></span><span class="s3">creaScaffale</span><span class="s1">(</span><span class="s8"><b>struct </b></span><span class="s6">rivista </span><span class="s1">scaffale[]);<br>
+</span><span class="s8"><b>void </b></span><span class="s3">genreSearch</span><span class="s1">(</span><span class="s8"><b>struct </b></span><span class="s6">rivista </span><span class="s1">scaffale[],</span><span class="s8"><b>struct </b></span><span class="s6">rivista </span><span class="s1">Search);</span></p>
+<p class="p4"><span class="s8"><b>int </b></span><span class="s3">checkPrezzo</span><span class="s1">(</span><span class="s8"><b>struct </b></span><span class="s6">rivista </span><span class="s1">scaffale[], </span><span class="s8"><b>struct </b></span><span class="s6">rivista </span><span class="s1">nomeRicerca);<br>
+</span><span class="s8"><b>int </b></span><span class="s3">checkRivista</span><span class="s1">(</span><span class="s8"><b>struct </b></span><span class="s6">rivista </span><span class="s1">scaffale[], </span><span class="s8"><b>struct </b></span><span class="s6">rivista </span><span class="s1">nomeRicerca);</span></p>
+<p class="p23"><span class="s8"><b>void </b></span><span class="s3">instrumentSearch</span><span class="s4">(</span><span class="s8"><b>struct </b></span><span class="s1">rivista </span><span class="s4">scaffale[], </span><span class="s8"><b>struct </b></span><span class="s1">musicalInstrument </span><span class="s4">Ricercato);<span class="Apple-converted-space"> </span></span></p>
+<p class="p22"><span class="s8"><b>void </b></span><span class="s1">clearScreen</span><span class="s4">(</span><span class="s8"><b>void</b></span><span class="s4">);<br>
+</span><span class="s8"><b>void </b></span><span class="s1">pauseScreen</span><span class="s4">(</span><span class="s8"><b>void</b></span><span class="s4">);<span class="Apple-converted-space"> </span></span></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p17"><span class="s1">CONTENUTO DEL FILE “musicFunctions.h”</span></p>
+<p class="p2"><span class="s2">#include </span><span class="s1">"musicHeader.h"<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1">//instrumentSearch: function utilizzata per la ricerca di riviste che riguardano un determinato strumento musicale scelto dall'utente. Prende in input il "database" delle riviste e lo strumento musicale ricercato dall'utente.<span class="Apple-converted-space"> </span></span></p>
+<p class="p23"><span class="s8"><b>void </b></span><span class="s3">instrumentSearch</span><span class="s4">(</span><span class="s8"><b>struct </b></span><span class="s1">rivista </span><span class="s4">scaffale[], </span><span class="s8"><b>struct </b></span><span class="s1">musicalInstrument </span><span class="s4">Ricercato)<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">{<br>
+</span><span class="s8"><b><span class="Apple-tab-span">	</span>int </b></span><span class="s1">i, j;<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s8"><b><span class="Apple-tab-span">	</span>int </b></span><span class="s4">found = </span><span class="s7">0</span><span class="s4">; </span><span class="s1">//Variabile che indica se sono state trovate riviste per quel determinato strumento<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s8"><b><span class="Apple-tab-span">	</span>for </b></span><span class="s1">(i=</span><span class="s7">0</span><span class="s1">; i &lt;= </span><span class="s2">MAX_RIVISTE</span><span class="s1">; i++)<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>{<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s8"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>for </b></span><span class="s1">(j=</span><span class="s7">0</span><span class="s1">; j &lt;= </span><span class="s2">MAX_STRUMENTI</span><span class="s1">; j++)<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>{<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s8"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>if </b></span><span class="s4">(</span><span class="s11">strcmp</span><span class="s4">(Ricercato.</span><span class="s9">nome</span><span class="s4">, scaffale[i].</span><span class="s9">strumento</span><span class="s4">[j].</span><span class="s9">nome</span><span class="s4">) == </span><span class="s7">0</span><span class="s4">) <span class="Apple-tab-span">	</span></span><span class="s1">//comparazione tra il nome dello strumento ricercato e gli strumenti inclusi nelle riviste sullo scaffale</span></p>
+<p class="p24"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s14">{</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">                <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>found=</span><span class="s7">1</span><span class="s4">;<span class="Apple-converted-space"> </span></span><span class="s1"> <span class="Apple-converted-space">          </span>//Se la rivista con quello strumento viene trovata, allora found sarà portata ad 1 e non si eseguirà il secondo if</span></p>
+<p class="p25"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>printf</span><span class="s4">(</span><span class="s13">"\n"</span><span class="s4">);<br>
+</span><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>printf</span><span class="s4">(</span><span class="s13">"TITOLO: %10s \n"</span><span class="s4">,scaffale[i].</span><span class="s9">titolo</span><span class="s4">);<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>printf</span><span class="s4">(</span><span class="s1">"PREZZO: %4.2f EURO \n"</span><span class="s4">,scaffale[i].</span><span class="s9">prezzo</span><span class="s4">);</span></p>
+<p class="p2"><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>printf</span><span class="s4">(</span><span class="s1">"DISPONIBILI: %3d \n"</span><span class="s4">,scaffale[i].</span><span class="s9">pezziDisponibili</span><span class="s4">);<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s11">printf</span><span class="s1">(</span><span class="s13">"\n"</span><span class="s1">);<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span></span><span class="s8"><b>if</b></span><span class="s1">(found == </span><span class="s7">0</span><span class="s1">)<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span>{<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s11">printf</span><span class="s4">(</span><span class="s1">"Non ci sono riviste riguardanti questo strumento nel nostro scaffale. \n"</span><span class="s4">); <span class="Apple-tab-span">	</span></span><span class="s10">//da eseguire in caso found non sia incrementata ad 1 dall’if precedente</span></p>
+<p class="p4"><span class="s17"><span class="Apple-tab-span">	</span></span><span class="s1">}</span></p>
+<p class="p4"><span class="s1">}<span class="Apple-converted-space"> </span></span></p>
+<p class="p26"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">//genreSearch: function utilizzata per la ricerca di riviste che trattano un genere specifico, scelto dall'utente. Prende in input lo scaffale che contiene tutte le riviste e il titolo della rivista ricercata dall'utente.<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s8"><b>void </b></span><span class="s3">genreSearch</span><span class="s1">(</span><span class="s8"><b>struct </b></span><span class="s6">rivista </span><span class="s1">scaffale[],</span><span class="s8"><b>struct </b></span><span class="s6">rivista </span><span class="s1">Search)<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">{<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s8"><b><span class="Apple-tab-span">	</span>int </b></span><span class="s4">i;<br>
+</span><span class="s8"><b><span class="Apple-tab-span">	</span>int </b></span><span class="s4">found = </span><span class="s7">0</span><span class="s4">; <span class="Apple-tab-span">	</span></span><span class="s1">//Variabile che indica se sono state trovate riviste per quel genere</span></p>
+<p class="p4"><span class="s8"><b><span class="Apple-tab-span">	</span>for</b></span><span class="s1">(i=</span><span class="s7">0</span><span class="s1">; i&lt;=</span><span class="s2">MAX_RIVISTE</span><span class="s1">; i++)<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>{<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s8"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>if</b></span><span class="s4">(</span><span class="s11">strcmp</span><span class="s4">(Search.</span><span class="s9">genere</span><span class="s4">, scaffale[i].</span><span class="s9">genere</span><span class="s4">) == </span><span class="s7">0</span><span class="s4">) </span><span class="s1">//comparazione tra il genere ricercato e i generi delle riviste sullo scaffale</span></p>
+<p class="p5"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s4">{</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">          <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>found=</span><span class="s7">1</span><span class="s4">; </span><span class="s1"><span class="Apple-converted-space">    </span>//Se la rivista di quel genere viene trovata, allora found sarà portata ad 1 e non si eseguirà il secondo if<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>printf</span><span class="s4">(</span><span class="s1">"\n"</span><span class="s4">);<br>
+</span><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>printf</span><span class="s4">(</span><span class="s1">"TITOLO: %10s \n"</span><span class="s4">,scaffale[i].</span><span class="s9">titolo</span><span class="s4">);</span></p>
+<p class="p2"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s11">printf</span><span class="s4">(</span><span class="s1">"PREZZO: %4.2f EURO \n"</span><span class="s4">,scaffale[i].</span><span class="s9">prezzo</span><span class="s4">);</span></p>
+<p class="p2"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s11">printf</span><span class="s4">(</span><span class="s1">"DISPONIBILI: %3d \n"</span><span class="s4">,scaffale[i].</span><span class="s9">pezziDisponibili</span><span class="s4">);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s11">printf</span><span class="s1">(</span><span class="s13">"\n"</span><span class="s1">);<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span></span><span class="s8"><b>if</b></span><span class="s1">(found == </span><span class="s7">0</span><span class="s1">)<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>{<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>printf</span><span class="s4">(</span><span class="s13">"Il genere non e' presente nel nostro scaffale. \n"</span><span class="s4">); <span class="Apple-tab-span">	</span></span><span class="s1">//da eseguire in caso found non sia incrementata ad 1 dall'if precedente</span></p>
+<p class="p4"><span class="s10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s1">}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">}<span class="Apple-converted-space"> </span></span></p>
+<p class="p27"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1">//checkPrezzo: function utilizzata per la stampa del prezzo di una rivista. Ha in input lo scaffale contenente le riviste e la rivista da ricercare</span></p>
+<p class="p4"><span class="s8"><b>int </b></span><span class="s3">checkPrezzo</span><span class="s1">(</span><span class="s8"><b>struct </b></span><span class="s6">rivista </span><span class="s1">scaffale[], </span><span class="s8"><b>struct </b></span><span class="s6">rivista </span><span class="s1">Search)<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">{<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s8"><b><span class="Apple-tab-span">	</span>int </b></span><span class="s1">i;<br>
+</span><span class="s8"><b><span class="Apple-tab-span">	</span>for </b></span><span class="s1">(i=</span><span class="s7">0</span><span class="s1">; i&lt;=</span><span class="s2">MAX_RIVISTE</span><span class="s1">; i++)<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span>{<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s8"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>if</b></span><span class="s4">(</span><span class="s11">strcmp</span><span class="s4">(Search.</span><span class="s9">titolo</span><span class="s4">, scaffale[i].</span><span class="s9">titolo</span><span class="s4">) == </span><span class="s7">0</span><span class="s4">) </span><span class="s1">//comparo il titolo della rivista da cercare con tutti i titoli delle riviste sullo scaffale<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s4">{<br>
+</span><span class="s8"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>if </b></span><span class="s4">(scaffale[i].</span><span class="s9">pezziDisponibili </span><span class="s4">!= </span><span class="s7">0</span><span class="s4">) </span><span class="s1">//se la rivista è disponibile, allora ritorno il prezzo</span></p>
+<p class="p4"><span class="s8"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>return </b></span><span class="s1">scaffale[i].</span><span class="s9">prezzo</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span>}<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s4"><span class="Apple-tab-span">	</span></span><span class="s1"><b>return </b></span><span class="s7">0</span><span class="s4">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">}<span class="Apple-converted-space"> </span></span></p>
+<p class="p26"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1">//checkRivista: function che controlla la disponibilità in termini di pezzi disponibili di una rivista sullo scaffale. Prende in input lo scaffale delle riviste e la rivista da ricercare</span></p>
+<p class="p4"><span class="s8"><b>int </b></span><span class="s3">checkRivista</span><span class="s1">(</span><span class="s8"><b>struct </b></span><span class="s6">rivista </span><span class="s1">scaffale[], </span><span class="s8"><b>struct </b></span><span class="s6">rivista </span><span class="s1">Search)<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">{<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s8"><b><span class="Apple-tab-span">	</span>int </b></span><span class="s1">i;<br>
+</span><span class="s8"><b><span class="Apple-tab-span">	</span>for </b></span><span class="s1">(i=</span><span class="s7">0</span><span class="s1">; i&lt;=</span><span class="s2">MAX_RIVISTE</span><span class="s1">; i++)<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-tab-span">	</span>{<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s8"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>if</b></span><span class="s4">(</span><span class="s11">strcmp</span><span class="s4">(Search.</span><span class="s9">titolo</span><span class="s4">, scaffale[i].</span><span class="s9">titolo</span><span class="s4">)== </span><span class="s7">0 </span><span class="s4">) </span><span class="s1">//comparo il titolo della rivista da cercare con tutti i titoli delle riviste sullo scaffale<br>
+</span><span class="s8"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>if </b></span><span class="s4">(scaffale[i].</span><span class="s9">pezziDisponibili </span><span class="s4">!= </span><span class="s7">0</span><span class="s4">)<span class="Apple-converted-space"> </span></span><span class="s5"> </span><span class="s1">//se ci sono pezzi disponibili per quella rivista la function ritorna 1</span></p>
+<p class="p3"><span class="s1"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>return </b></span><span class="s7">1</span><span class="s4">;</span><span class="s10"><span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s4"><span class="Apple-tab-span">	</span>}<br>
+</span><span class="s8"><b><span class="Apple-tab-span">	</span>return </b></span><span class="s7">0</span><span class="s4">; </span><span class="s5"><span class="Apple-tab-span">	</span></span><span class="s1">//altrimenti 0</span></p>
+<p class="p4"><span class="s1">}<span class="Apple-converted-space"> </span></span></p>
+<p class="p26"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">//clearScreen: function che permette di ripulire la visualizzazione. Alternativa di SYSTEM("CLS"), al fine di evitare una chiamata di sistema, oltre che disponibile solo su Windows.<span class="Apple-converted-space"> </span></span></p>
+<p class="p22"><span class="s8"><b>void </b></span><span class="s1">clearScreen</span><span class="s4">()<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">{<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s8"><b><span class="Apple-tab-span">	</span>int </b></span><span class="s4">n;<br>
+</span><span class="s8"><b><span class="Apple-tab-span">	</span>for </b></span><span class="s4">(n=</span><span class="s7">0</span><span class="s4">; n&lt;</span><span class="s7">10</span><span class="s4">; n++) </span><span class="s11">printf</span><span class="s4">(</span><span class="s1">"\n\n\n\n\n\n\n\n\n\n"</span><span class="s4">);<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">}<span class="Apple-converted-space"> </span></span></p>
+<p class="p26"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">//pauseScreen: function che permette di attendere un input dall'utente prima di permettere al programma di continuare. Alternativa di SYSTEM("PAUSE"), al fine di evitare una chiamata di sistema, oltre che disponibile solo su Windows.<span class="Apple-converted-space"> </span></span></p>
+<p class="p22"><span class="s8"><b>void </b></span><span class="s1">pauseScreen</span><span class="s4">()<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">{<span class="Apple-converted-space"> </span></span></p>
+<p class="p10"><span class="s1"><span class="Apple-converted-space">    </span>fflush</span><span class="s4">(</span><span class="s2">stdin</span><span class="s4">);</span></p>
+<p class="p9"><span class="s11"><span class="Apple-converted-space">    </span>printf</span><span class="s4">(</span><span class="s1">"Premi invio per continuare!\n"</span><span class="s4">);</span></p>
+<p class="p14"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s11">getchar</span><span class="s1">();<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">}<span class="Apple-converted-space"> </span></span></p>
+<p class="p11"><span class="s1"></span><br></p>
+<p class="p11"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">//creaScaffale: function che costruisce all'interno della variabile scaffale il "database" delle riviste disponibili, con tutte le loro caratteristiche. E' stato attualmente popolato di 9 riviste, con relativi titoli, IDcode, generi, disponibilità e strumenti trattati nella rivista. Prende in input la variabile scaffale</span></p>
+<p class="p4"><span class="s8"><b>void </b></span><span class="s3">creaScaffale</span><span class="s1">(</span><span class="s8"><b>struct </b></span><span class="s6">rivista </span><span class="s1">scaffale[]) {<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s4">scaffale[</span><span class="s7">0</span><span class="s4">].</span><span class="s9">titolo </span><span class="s4">= </span><span class="s1">"JazzProgramming"</span><span class="s4">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">0</span><span class="s1">].</span><span class="s9">IDcode </span><span class="s1">= </span><span class="s13">"AK236451"</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">0</span><span class="s1">].</span><span class="s9">genere </span><span class="s1">= </span><span class="s13">"jazz"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">0</span><span class="s1">].</span><span class="s9">prezzo </span><span class="s1">= </span><span class="s7">20</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p28"><span class="s4">scaffale[</span><span class="s7">0</span><span class="s4">].</span><span class="s1">pezziDisponibili </span><span class="s4">= </span><span class="s7">4</span><span class="s4">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">0</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">0</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Batteria"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">0</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">1</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Chitarra"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">0</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">2</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Tromba"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">0</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">3</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"\0"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">0</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">4</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"\0"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">1</span><span class="s1">].</span><span class="s9">titolo </span><span class="s1">= </span><span class="s13">"PoProgramming"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">1</span><span class="s1">].</span><span class="s9">IDcode </span><span class="s1">= </span><span class="s13">"AF556451"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">1</span><span class="s1">].</span><span class="s9">genere </span><span class="s1">= </span><span class="s13">"pop"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">1</span><span class="s1">].</span><span class="s9">prezzo </span><span class="s1">= </span><span class="s7">27</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p28"><span class="s4">scaffale[</span><span class="s7">1</span><span class="s4">].</span><span class="s1">pezziDisponibili </span><span class="s4">= </span><span class="s7">2</span><span class="s4">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">1</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">0</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Xilofono"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">1</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">1</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Sassofono"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">1</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">2</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Batteria"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">1</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">3</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Chitarra"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">1</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">4</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"\0"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p26"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">2</span><span class="s1">].</span><span class="s9">titolo </span><span class="s1">= </span><span class="s13">"RockRamming"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">2</span><span class="s1">].</span><span class="s9">IDcode </span><span class="s1">= </span><span class="s13">"AL556721"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">2</span><span class="s1">].</span><span class="s9">genere </span><span class="s1">= </span><span class="s13">"rock"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">2</span><span class="s1">].</span><span class="s9">prezzo </span><span class="s1">= </span><span class="s7">15</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p28"><span class="s4">scaffale[</span><span class="s7">2</span><span class="s4">].</span><span class="s1">pezziDisponibili </span><span class="s4">= </span><span class="s7">6</span><span class="s4">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">2</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">0</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Batteria"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">2</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">1</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Chitarra"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">2</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">2</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"\0"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">2</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">3</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"\0"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">2</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">4</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"\0"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p26"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">3</span><span class="s1">].</span><span class="s9">titolo </span><span class="s1">= </span><span class="s13">"PunkCode"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">3</span><span class="s1">].</span><span class="s9">IDcode </span><span class="s1">= </span><span class="s13">"PU555555"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">3</span><span class="s1">].</span><span class="s9">genere </span><span class="s1">= </span><span class="s13">"punk"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">3</span><span class="s1">].</span><span class="s9">prezzo </span><span class="s1">= </span><span class="s7">11</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p28"><span class="s4">scaffale[</span><span class="s7">3</span><span class="s4">].</span><span class="s1">pezziDisponibili </span><span class="s4">= </span><span class="s7">3</span><span class="s4">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">3</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">0</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Batteria"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">3</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">1</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Xilofono"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">3</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">2</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"\0"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">3</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">3</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"\0"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">3</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">4</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"\0"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p26"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">4</span><span class="s1">].</span><span class="s9">titolo </span><span class="s1">= </span><span class="s13">"RapOne"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">4</span><span class="s1">].</span><span class="s9">IDcode </span><span class="s1">= </span><span class="s13">"RA553351"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">4</span><span class="s1">].</span><span class="s9">genere </span><span class="s1">= </span><span class="s13">"rap"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">4</span><span class="s1">].</span><span class="s9">prezzo </span><span class="s1">= </span><span class="s7">30</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p28"><span class="s4">scaffale[</span><span class="s7">4</span><span class="s4">].</span><span class="s1">pezziDisponibili </span><span class="s4">= </span><span class="s7">5</span><span class="s4">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">4</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">0</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Chitarra"</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">4</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">1</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Tromba"</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">4</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">2</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Sassofono"</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">4</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">3</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"\0"</span><span class="s1">;</span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">4</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">4</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"\0"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">5</span><span class="s1">].</span><span class="s9">titolo </span><span class="s1">= </span><span class="s13">"CPopPop"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">5</span><span class="s1">].</span><span class="s9">IDcode </span><span class="s1">= </span><span class="s13">"CC554721"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">5</span><span class="s1">].</span><span class="s9">genere </span><span class="s1">= </span><span class="s13">"pop"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">5</span><span class="s1">].</span><span class="s9">prezzo </span><span class="s1">= </span><span class="s7">17</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p28"><span class="s4">scaffale[</span><span class="s7">5</span><span class="s4">].</span><span class="s1">pezziDisponibili </span><span class="s4">= </span><span class="s7">5</span><span class="s4">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">5</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">0</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Chitarra"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">5</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">1</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Tromba"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">5</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">2</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Sassofono"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">5</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">3</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Xilofono"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">5</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">4</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Batteria"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p26"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">6</span><span class="s1">].</span><span class="s9">titolo </span><span class="s1">= </span><span class="s13">"Punkgramming"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">6</span><span class="s1">].</span><span class="s9">IDcode </span><span class="s1">= </span><span class="s13">"PU777771"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">6</span><span class="s1">].</span><span class="s9">genere </span><span class="s1">= </span><span class="s13">"punk"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">6</span><span class="s1">].</span><span class="s9">prezzo </span><span class="s1">= </span><span class="s7">20</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p28"><span class="s4">scaffale[</span><span class="s7">6</span><span class="s4">].</span><span class="s1">pezziDisponibili </span><span class="s4">= </span><span class="s7">11</span><span class="s4">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">6</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">0</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Chitarra"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">6</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">1</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Tromba"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">6</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">2</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Sassofono"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">6</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">3</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Xilofono"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">6</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">4</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"\0"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">7</span><span class="s1">].</span><span class="s9">titolo </span><span class="s1">= </span><span class="s13">"Sxrrxwland"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">7</span><span class="s1">].</span><span class="s9">IDcode </span><span class="s1">= </span><span class="s13">"SX554717"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">7</span><span class="s1">].</span><span class="s9">genere </span><span class="s1">= </span><span class="s13">"rap"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">7</span><span class="s1">].</span><span class="s9">prezzo </span><span class="s1">= </span><span class="s7">35</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p28"><span class="s4">scaffale[</span><span class="s7">7</span><span class="s4">].</span><span class="s1">pezziDisponibili </span><span class="s4">= </span><span class="s7">7</span><span class="s4">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">7</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">0</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Chitarra"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">7</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">1</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Tromba"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">7</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">2</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Sassofono"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">7</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">3</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Xilofono"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">7</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">4</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Batteria"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p26"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">8</span><span class="s1">].</span><span class="s9">titolo </span><span class="s1">= </span><span class="s13">"ANIMAMUNDI"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">8</span><span class="s1">].</span><span class="s9">IDcode </span><span class="s1">= </span><span class="s13">"AM666711"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">8</span><span class="s1">].</span><span class="s9">genere </span><span class="s1">= </span><span class="s13">"rap"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">8</span><span class="s1">].</span><span class="s9">prezzo </span><span class="s1">= </span><span class="s7">50</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p28"><span class="s4">scaffale[</span><span class="s7">8</span><span class="s4">].</span><span class="s1">pezziDisponibili </span><span class="s4">= </span><span class="s7">1</span><span class="s4">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">8</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">0</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Chitarra"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">8</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">1</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"Batteria"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">8</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">2</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"\0"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">8</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">3</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"\0"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">scaffale[</span><span class="s7">8</span><span class="s1">].</span><span class="s9">strumento</span><span class="s1">[</span><span class="s7">4</span><span class="s1">].</span><span class="s9">nome </span><span class="s1">= </span><span class="s13">"\0"</span><span class="s1">;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1">}<span class="Apple-converted-space"> </span></span></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p27"><span class="s1"></span><br></p>
+<p class="p11"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p27"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p27"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p29"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p11"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p11"><span class="s1"></span><br></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p11"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p11"><span class="s1"><span class="Apple-tab-span">	</span></span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p12"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p11"><span class="s1"></span><br></p>
+<p class="p30"><span class="s1"></span><br></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p11"><span class="s1"></span><br></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p11"><span class="s1"></span><br></p>
+<p class="p26"><span class="s1"></span><br></p>
+<p class="p27"><span class="s1"></span><br></p>
+<p class="p26"><span class="s1"></span><br></p>
+</body>
+</html>
