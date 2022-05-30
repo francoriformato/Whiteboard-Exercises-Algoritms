@@ -1,0 +1,57 @@
+-- TOTALITA' --
+
++ Posso inserire un ORDINE senza NumTavolo?
+	NO!  -> "Tutti gli Ordini sono seduti a Tavoli" rispettata.
+
++ Posso inserire un CONTO senza correlazione ad un ORDINE?
+	NO!  -> "Tutti i Conti sono pagati da Ordini" rispettata.
+
++ Posso inserire valori su CONTIENE senza correlazione ad un ORDINE?
+	NO!  -> Tutti i valori di Contiene devono riferirsi ad un Ordine valido.
+
++ Posso inserire un ORDINE che non Contiene alcun prodotto?
+	SI.  -> "Tutti gli Ordini contengono Prodotti In Vendita" non rispettata.
+		Lasciata in questo modo perchè si potrebbe voler ordinare successivamente.
+
++ Posso inserire un CLIENTE PRENOTANTE senza relativo ORDINE?
+	SI.  -> "Tutti i Clienti Prenotanti effettuano un ordine" non rispettata.
+
++ Posso inserire una QUALIFICA senza DIPENDENTE che la possiede?
+	NO!  -> "Tutte le Qualifiche sono possedute da Dipendenti" rispettata.
+
++ Posso inserire un DIPENDENTE che non sia nè "Cuoco" nè "Cameriere"?
+	NO!  -> "Tutti i Dipendenti si specializzano in Cuoco o Cameriere" rispettata.
+                Ma posso inserire un "Cameriere" con la specializzazione che dovrebbe essere propria di "Cuoco"
+                => Specializzazione non tradotta.
+
++ Posso inserire un TURNO senza che si riferisca ad un DIPENDENTE?
+	NO!  -> "Tutti i Turni sono seguiti da Dipendenti" rispettata.
+
++ Posso inserire un PERMESSO senza che sia richiesto da un DIPENDENTE?
+	NO!  -> "Tutti i Permessi sono richiesti da Dipendenti" rispettata.
+
++ Posso inserire una SALA senza che sia servita da alcun dipendente?
+	Teoricamente "SI", ma c'è un check su SALA "NumSala BETWEEN 1 and 3" e SERVE.NumSala è parte della PK di SERVE.
+
+
+-- MOLTEPLICITA' --
+
++ "Ad un Tavolo siedono N Ordini", "Un Ordine siede ad un solo Tavolo"				rispettata.
+
++ "Un Ordine contiene N ProdottiInVendita", "Un ProdottoInVendita è contenuto in M Ordini"	rispettata.
+
++ "Un Ordine paga un solo Conto", "Un Conto è pagato da un solo Ordine"				non rispettata, posso inserire NumFattura diversi per
+												lo stesso Ordine.
+												=> Posso impedirlo mettendo UNIQUE la combinazione (NumTavolo,DataOraOrdine) 
+												su CONTO. => rispettata.
+
++ "Un Cliente Prenotante può effettuare un solo Ordine", "Un Ordine è effettuato da un solo CP"	rispettata, dato che "contatto" è chiave primaria di ClientePrenotante.
+
++ "Un Dipendente segue N Turni", "Un Turno è seguito da un solo Dipendente"			rispettata.
+
++ "Un Dipendente possiede M Qualifiche", "Una Qualifica è posseduta da un solo Dipendente"	rispettata.
+
++ "Un Turno serve una Sala", "Una Sala è servita da N Turni"					su Serve posso avere più volte lo stesso numero di Sala, se associato a Turni
+												diversi (in base al CartellinoDipendente e alla DataOraTurno).
+												=> rispettata, ma non la prima parte dato che posso avere stesso Turno ma con
+												   Sale diverse.

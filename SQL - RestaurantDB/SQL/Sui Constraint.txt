@@ -1,0 +1,96 @@
+-- Lista dei CONSTRAINT --
+
+-- ORDINE --
+FKOrdine 	-> Vincolo di chiave esterna che lega "Ordine" a "Tavolo" tramite "NumTavolo".
+		   ON DELETE: Cascade.
+		   (Eliminando il NumTavolo, saranno eliminati in automatico tutti gli ordini che riguardano quel
+ 		    tavolo -> Se il tavolo non esiste più, non esisteranno più neanche gli ordini associati)
+
+PKOrdine 	-> Vincolo di chiave primaria di "Ordine", dato che la primary key di "Ordine" è formata da
+                   (NumTavolo, DataOraOrdine).
+                   [Ordine è un'entità debole di Tavolo]
+
+
+-- CONTO --
+FKConto1	-> Vincolo di chiave esterna che lega "Conto" a "Tavolo".
+                   ON DELETE: Cascade.
+                   (Eliminando il NumTavolo da Tavolo, saranno eliminati tutti i Conti ad esso associati)
+
+FKConto2	-> Vincolo di chiave esterna che lega "Conto" ad "Ordine".
+                   ON DELETE: Cascade.
+                   (Eliminando una DataOraOrdine e un NumTavolo da "Ordine", avrò l'eliminazione della relativa
+                    fattura su "Conto")
+
+UniConto	-> Vincolo UNIQUE che rende unica la coppia (NumTavolo, DataOraOrdine).
+                   Impedisce di avere più conti per una stessa istanza di "Ordine".
+
+
+-- CONTIENE --
+FKContiene1	-> Vincolo di chiave esterna che lega "Contiene" a "Tavolo".
+		   ON DELETE: Cascade.
+                   (Eliminando il NumTavolo da Tavolo, vengono eliminate le tuple su "Contiene" dove appare quel Tavolo)
+                  
+FKContiene2	-> Vincolo di chiave esterna che lega "Contiene" ad "Ordine".
+		   ON DELETE: Cascade.
+                   (Eliminando una DataOraOrdine e un NumTavolo da "Ordine", avrò l'eliminazione di tutti i prodotti
+                    contenuti nell'Ordine)
+
+PKContiene	-> Vincolo di chiave primaria dell'associazione "Contiene".
+                   Impedisce la ripetizione di (NumTavolo, DataOraOrdine, IdentificativoProdotto).
+                   (Infatti, se dovessimo ordinare un prodotto più volte per uno stesso Ordine, c'è l'attributo
+                    "Quantita" su "Contiene").
+
+
+-- CLIENTEPRENOTANTE --
+FKCliente1	-> Vincolo di chiave esterna che lega "ClientePrenotante" a "Tavolo".
+		   ON DELETE: Set NULL.
+		   (Eliminando il NumTavolo da Tavolo, alle prenotazioni su quel tavolo vengono assegnati valori di "NumTavoloAssegnato" null,
+                   in modo che siano successivamente riallocate ad un tavolo esistente)
+
+FKCliente2	-> Vincolo di chiave esterna che lega "ClientePrenotante" a "Ordine"
+		   ON DELETE: Cascade.
+		   (Eliminando una DataOraOrdine e un NumTavolo da "Ordine", che corrispondono ad un Ordine di un ClientePrenotante,
+		    anche la sua prenotazione verrà eliminata)
+
+
+-- TURNO --
+FKTurno1	-> Vincolo di chiave esterna che lega "Turno" a "Dipendente".
+	           ON DELETE: Cascade.
+                   (Eliminando un CartellinoDipendente, eliminerò anche tutti i turni ad esso associati)
+
+PKTurno		-> Vincolo di chiave primaria di "Turno".
+		   "Turno" risulta essere un'entità debole di "Dipendente".
+ 		   E' definita da (CartellinoDipendente, DataOraTurno).
+
+
+-- SERVE --
+FKServe1	-> Vincolo di chiave esterna che lega "Serve" a "Dipendente".
+	           ON DELETE: Cascade.
+		   (Eliminato il CartellinoDipendente, non è più utile sapere le sale che serve)
+
+FKServe2	-> Vincolo di chiave esterna che lega "Serve" a "Turno".
+		   ON DELETE: Cascade.
+		   (Eliminato il relativo Turno, il Turno non serve più la Sala)
+
+FKServe3	-> Vincolo di chiave esterna che lega "Serve" a "Sala".
+		   ON DELETE: Cascade.
+                   (Eliminata la Sala, non è più servita da alcun Turno)
+
+PKServe		-> Vincolo di chiave primaria dell'associazione "Serve".
+                   Impedisce che venga ripetuta la combinazione di (CartellinoDipendente, DataOraTurno, NumSala).
+	           Impedisce che vi siano dei valori su "Serve" con null su uno di questi tre attributi.
+
+
+-- PERMESSO --
+FKPermesso1	-> Vincolo di chiave esterna che collega "Permesso" a "Dipendente".
+                   ON DELETE: Cascade.
+		   (Eliminando un Dipendente, non ci interessano più i permessi che ha preso)
+
+PKPermesso	-> Vincolo di chiave primaria di "Permesso".
+		   "Permesso" è entità debole di "Dipendente".
+		   E' definita da (CartellinoDipendente, DataOraPermesso).
+
+
+-- QUALIFICA --
+FKQualifica1	-> Vincolo di chiave esterna che collega "Qualifica" a "Dipendente".
+		   (Eliminando un Dipendente, non ci interessano più le qualifiche che aveva)
